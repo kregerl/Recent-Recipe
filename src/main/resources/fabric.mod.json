@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "recentrecipe",
+  "version": "${version}",
+
+  "name": "Recent Recipe",
+  "description": "Allows users to press the spacebar after crafting an item to re-craft the same item, similar to the villager trading GUI.",
+  "authors": [
+    "AreUThreatningMe"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/recent-recipe",
+    "sources": "https://github.com/kregerl/Recent-Recipe"
+  },
+
+  "license": "MIT",
+  "icon": "assets/recentrecipe/RecentRecipeLogo.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.loucaskreger.recentrecipe.RecentRecipe"
+    ]
+  },
+  "mixins": [
+    "recentrecipe.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.17.x",
+    "java": ">=16"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
